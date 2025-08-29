@@ -5,8 +5,8 @@
 \alias{ggredist}
 \title{Redistricting Color Palettes}
 \format{
-list of character vectors of type \code{palette} (which supports a
-\code{plot()} generic for visualization)
+list of character vectors of type \link[palette:palette]{palette::palette} (which supports a
+\code{plot()}, \code{print()}, and \code{pillar} generics for visualization)
 }
 \usage{
 ggredist
@@ -21,7 +21,21 @@ Pennsylvania congressional district map
 \item \strong{randmcnally} and \strong{natgeo}, colors taken from Rand-McNally and National
 Geographic political maps
 \item \strong{coast} and \strong{larch}, inspired by natural scenery
+\item \strong{fivethirtyeight}, FiveThirtyEight-inspired color palette
+\item \strong{wiki_dem_pres}: Wikipedia Presidential Democratic palette
+\item \strong{wiki_rep_pres}: Wikipedia Presidential Republican palette
+\item \strong{wiki_dem}: Wikipedia downballot Democratic palette
+\item \strong{wiki_rep}: Wikipedia downballot Republican palette
+\item \strong{wiki_proposal}: Wikipedia proposal support palette
+\item \strong{jacksonville}, Jacksonville, FL inspired color palette
+\item \strong{florida}, Florida inspired color palette
+\item \strong{washington}, Washington Redistricting Commission inspired color palette
+\item \strong{alaska}, Alaska inspired color palette
 }
+}
+\details{
+For details on Wikipedia-based colors, see
+\url{https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Elections_and_Referendums/USA_legend_colors}.
 }
 \examples{
 plot(ggredist$partisan)
@@ -31,6 +45,16 @@ plot(ggredist$randmcnally)
 plot(ggredist$natgeo)
 plot(ggredist$coast)
 plot(ggredist$larch)
+plot(ggredist$fivethirtyeight)
+plot(ggredist$wiki_dem_pres)
+plot(ggredist$wiki_rep_pres)
+plot(ggredist$wiki_dem)
+plot(ggredist$wiki_rep)
+plot(ggredist$wiki_proposal)
+plot(ggredist$jacksonville)
+plot(ggredist$florida)
+plot(ggredist$washington)
+plot(ggredist$alaska)
 
 }
 \concept{colors}
